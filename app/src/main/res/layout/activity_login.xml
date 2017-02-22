@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@color/auth_background"
+    android:gravity="center_horizontal"
+    tools:context="com.trustinno.win.jobagtrustinno.znk.Authentication.RegisterActivity">
+    <!-- Login progress -->
+    <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/mainlogo"
+    android:scaleType="fitXY"
+    android:alpha="0.9"
+    />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="35dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/loginlogo"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/ic_launcher" />
+
+            <EditText
+                android:id="@+id/login_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/prompt_name"
+                android:background="@color/white"
+                android:inputType="text"
+                android:textColor="@color/textbar"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/prompt_password"
+                android:imeActionId="@+id/login"
+                android:inputType="textPassword"
+                android:layout_marginTop="20dp"
+                android:maxLines="1"
+                android:background="@color/white"
+                android:textColor="@color/textbar" />
+
+            <Button
+                android:id="@+id/email_sign_in_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@color/textbar"
+                android:text="@string/action_sign_in"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/linkrecovery"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:autoLink="all"
+                android:clickable="true"
+                android:paddingTop="20dp"
+                android:text="@string/forp"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/linkregister"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:autoLink="all"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:paddingTop="20dp"
+                android:text="@string/newac"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" />
+            <!--<Button
+                android:id="@+id/sign_in_employer_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="To Employer"
+                android:textStyle="bold"
+                android:background="@color/logtext_co"/>-->
+            <Button
+                android:id="@+id/sign_in_employer_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/logtext_co"
+                android:text="@string/action_next"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

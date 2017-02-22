@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JobReady365</string>
+    <string name="action_settings">ြပင်ဆင်၇န်</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_main3">Main3Activity</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+    <string name="title_activity_contact_us">ContactUsActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+
+    <string name="profile">ကိုထ်ေ၇း</string>
+    <string name="search_jobs">အလုပ်၇ှာ၇န်</string>
+    <string name="about_us">About Us</string>
+    <string name="contact_us">ဆက်သွပပ်၇န်</string>
+    <string name="mm_string">ြမန်မာ</string>
+    <string name="eng_string">အဂ္္လိပ်</string>
+    <string name="location">ြမို့</string>
+    <string name="job_type">အလုပ်စာချုပ်</string>
+    <string name= "job_category">အလုပ်အမျိုးအစား</string>
+    <string name="name">နမည်</string>
+    <string name="password">လျိုငှက်နံပါတ်</string>
+    <string name="login">ဝင်၇န်</string>
+    <string name="email">အီးေမး</string>
+</resources>

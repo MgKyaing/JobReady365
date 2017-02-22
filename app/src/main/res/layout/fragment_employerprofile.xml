@@ -1,0 +1,116 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trustinno.win.jobagtrustinno.znk.Employer.Employer_profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/employer_profile_onelinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@color/darkgreen"
+            android:elevation="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:src="@drawable/profile"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/threedp"
+                android:layout_marginLeft="@dimen/text_align_vertically"
+                android:layout_marginRight="@dimen/text_align_vertically"
+                android:hint="@string/name" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/threedp"
+                android:layout_marginLeft="@dimen/text_align_vertically"
+                android:layout_marginRight="@dimen/text_align_vertically"
+                android:hint="@string/prompt_phonenumber" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/threedp"
+                android:layout_marginLeft="@dimen/text_align_vertically"
+                android:layout_marginRight="@dimen/text_align_vertically"
+                android:hint="@string/prompt_email" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="@dimen/threedp"
+                android:layout_marginLeft="@dimen/text_align_vertically"
+                android:layout_marginRight="@dimen/text_align_vertically"
+                android:hint="@string/address" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_align_vertically"
+                android:layout_marginRight="@dimen/text_align_vertically"
+                android:hint="@string/postal_code" />
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_align_vertically"
+                android:entries="@array/employer_country"
+                android:textColor="@color/white" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_align_vertically"
+                android:entries="@array/employer_city"
+                android:textColor="@color/white" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_align_vertically"
+                android:entries="@array/employer_township"
+                android:paddingBottom="@dimen/fab_margin"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/employer_profile_onelinear"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:elevation="10dp"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:background="@color/auth_background"
+                android:elevation="10dp"
+                android:text="@string/employer_profile_edit"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

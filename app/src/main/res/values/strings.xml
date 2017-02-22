@@ -1,0 +1,165 @@
+<resources>
+    <string name="app_name">JobReady365</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_main3">Main3Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+    <string name="title_activity_contact_us">ContactUsActivity</string>
+    <!--<string name="title_activity_register">RegisterActivity</string>-->
+    <string name="profile">Profile</string>
+    <string name="search_jobs">Search Jobs</string>
+    <string name="about_us">About Us</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="mm_string">mm</string>
+    <string name="eng_string">eng</string>
+    <string name="location">Location</string>
+    <string name="job_type">Job Type</string>
+    <string name="job_category">Job Category</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="title_activity_profile_tab">ProfileTabActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_main4">Main4Activity</string>
+    <string name="update">Update</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_detatil">DetatilActivity</string>
+    <string name="title_activity_first_page">FirstPageActivity</string>
+
+<!--   Employer                                            -->
+
+ <string name="app_intro">You look so beautiful in your dress
+                        i love you hair like that
+                        The way it falls on the side of your neck
+                        Down your shoulders and back</string>
+    <string name="prompt_confirmpassword">Confirm Password</string>
+    <string name="prompt_name">Your Full Name</string>
+    <string name="prompt_phonenumber">Phonenumber</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="register_telephoneno">Telephone No.</string>
+    <string name="action_sign_in">Sign in </string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="employer">Employer</string>
+    <string name="employee">Employee</string>
+    <string name="action_next">Next</string>
+    <string name="login_text">Sign in</string>
+    <string name="newac">Please Register in this link</string>
+    <string name="forp">Forget password?</string>
+    <string name="reg_text">Register</string>
+    <string name="title_activity_register">Sign Up</string>
+    <string name="occupation_prompt">Occupation</string>
+    <string-array name="occupation_array">
+        <item> IT</item>
+        <item> HR</item>
+        <item> Business</item>
+        <item> Sale</item>
+        <item> CarService</item>
+        <item> Delivery</item>
+    </string-array>
+    <string name="title_activity_employer">Employer</string>
+
+    <!--          End           -->
+
+    <!--      This is the start of employer  drawer activity -->
+    <string name="title_upload">Upload Job</string>
+    <string name="title_viewcv">View CV</string>
+    <string name="title_empprofile">Profile</string>
+    <!--       end of employer  drawer activity -->
+
+    <!--  string related to employer_activity     -->
+    <string name="up_text">Upload</string>
+    <string name="contactinfo">Contact Infromation</string>
+    <string name="companyname_employer">Company Name</string>
+    <string name="description">Description</string>
+    <string name="address">Address</string>
+    <string name="position_employer">Position</string>
+    <string name="employer_price_prompt">Price</string>
+    <string name="job_position">Position</string>
+    <string-array name="employer_price_array">
+        <item>$100-$200</item>
+        <item>$200-$300</item>
+        <item>$300-$500</item>
+        <item>$500+++</item>
+    </string-array>
+    <string name="employer_jobtype_prompt"></string>
+    <string-array name="employer_jobtype_array">
+        <item> Partime</item>
+        <item> Fulltime</item>
+        <item> Contract</item>
+    </string-array>
+
+    <string name="employer_jobcategories_prompt"></string>
+    <string-array name="employer_jobcategories_array">
+
+        <item> IT</item>
+        <item> HR</item>
+        <item> Business</item>
+        <item> Sale</item>
+        <item> CarService</item>
+        <item> Delivery</item>
+    </string-array>
+    <!--    end   employer_activity      -->
+
+    <!-- Start employer job upload -->
+
+    <string name="employer_companyprofile">Company Profile</string>
+    <string name="employer_require">Requirement</string>
+    <string name="employer_payrole">Price(eg.10000mmk)</string>
+    <string-array name="employer_city">
+        <item>Yangon</item>
+        <item>Mandalay</item>
+    </string-array>
+    <string-array name="employer_country">
+        <item>Myanmar</item>
+        <item>England</item>
+        <item>Emma Watson</item>
+    </string-array>
+    <string name="employer_location">Location</string>
+    <string-array name="employer_township">
+        <item>Sanchaung</item>
+        <item>Alone</item>
+    </string-array>
+    <!--   End employer job upload       -->
+    <!-- Start employer job profile-->
+    <!--<string name="name">Name</string>-->
+    <string name="postal_code">Postal Code</string>
+    <string name="employer_profile_edit">Edit</string>
+
+
+    <!-- End employer job profile-->
+
+
+
+
+
+
+
+
+
+
+    <string name="contactus">Contact Us</string>
+    <string name="aboutus">About Us</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <!--          Employer_Profile                 -->
+    <string name="em_pro_txt">Profile</string>
+
+
+
+</resources>

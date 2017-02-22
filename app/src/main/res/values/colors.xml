@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorGray">#28eaeae4</color>
+    <color name="green_temp">#23A96E</color>
+    <color name="green_dark">#159204</color>
+    <color name="bright_green">#02D8B0</color>
+    <color name="button_green">#10a54a</color>
+    <color name="button_light">#f0f0f0</color>
+    <color name="button_dark">#000000</color>
+    <color name="auth_background">#3949ab</color>
+    <color name="white">#f5f5f5</color>
+    <color name="whitelight">#03ffffff</color>
+    <color name="logtext_co">#0288b1</color>
+    <color name="loginbackground">#ede7f6</color>
+    <color name="yellow">#fadd04</color>
+    <color name="textbar">#2979ff</color>
+    <color name="lightgreen">#41ca12</color>
+    <color name="green">#64dd17</color>
+    <color name="darkgreen">#43a047</color>
+    <color name="textcolor">#263238</color>
+    <color name="notsogreen">#64dd17</color>
+    <color name="greentest">#01de2d</color>
+</resources>
