@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.trustinno.win.jobagtrustinno.znk.Employer.Employer"
+    tools:context="com.example.win.jobready365.Employer.Employer"
     tools:showIn="@layout/app_bar_employer">
 
     <ScrollView

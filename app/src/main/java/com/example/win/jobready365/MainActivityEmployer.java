@@ -6,8 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.win.jobready365.znk.Authentication.LoginActivity;
-import com.example.win.jobready365.znk.Authentication.LoginActivity;
+import com.example.win.jobready365.Authentication.LoginActivity;
 
 public class MainActivityEmployer extends AppCompatActivity {
     private  Button gotologin;

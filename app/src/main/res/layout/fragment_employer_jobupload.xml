@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.trustinno.win.jobagtrustinno.znk.Employer.Employer_jobupload">
+    tools:context="com.example.win.jobready365.Employer.Employer_jobupload">
 
     <RelativeLayout
         android:layout_width="match_parent"

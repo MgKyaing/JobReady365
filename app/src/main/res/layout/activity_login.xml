@@ -2,9 +2,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-android:background="@color/auth_background"
+    android:background="@color/auth_background"
     android:gravity="center_horizontal"
-    tools:context="com.trustinno.win.jobagtrustinno.znk.Authentication.RegisterActivity">
+    tools:context="com.example.win.jobready365.Authentication.RegisterActivity">
+
     <!-- Login progress -->
     <ImageView
     android:layout_width="match_parent"
