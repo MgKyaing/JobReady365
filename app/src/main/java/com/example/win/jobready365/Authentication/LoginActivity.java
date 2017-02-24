@@ -17,6 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.win.jobready365.Employer.Employer;
+import com.example.win.jobready365.Main3Activity;
 import com.example.win.jobready365.Main4Activity;
 import com.example.win.jobready365.Server.BusProvider;
 import com.example.win.jobready365.Server.ConnectionHub;
@@ -45,18 +46,22 @@ public class LoginActivity extends AppCompatActivity {
     private TextView extraInformation;
     public static String token;
     public int rdoType, rdotype;
-    public String userId, userType,userlogin_name, users;
+    public String userId, userType, userlogin_name, users;
+
+    private String usertone = "1";
+    private String userttwo = "2";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
         // Set up the login form.
         ImageView myImageView = (ImageView) findViewById(R.id.loginlogo);
         Animation myFadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.employer_fade_in);
         myImageView.startAnimation(myFadeInAnimation);
 
-      employer_sign_in_button = (Button) findViewById(R.id.sign_in_employer_button);
+        employer_sign_in_button = (Button) findViewById(R.id.sign_in_employer_button);
         employer_sign_in_button.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -171,70 +176,86 @@ public class LoginActivity extends AppCompatActivity {
     @Subscribe
     public void onServerEvent(ServerEvent serverEvent) {
 
-//        if (serverEvent.getServerResponse() == null)
-//        {
-//            Toast.makeText(getApplicationContext(), "blabla", Toast.LENGTH_LONG).show();
-//        }
+        if (serverEvent.getServerResponse() == null) {
+            Toast.makeText(getApplicationContext(), "blabla", Toast.LENGTH_LONG).show();
+        }
 
-       if (serverEvent.getServerResponse() != null){
+        if (serverEvent.getServerResponse() != null) {
             //  Toast.makeText(getApplicationContext(), "Success ServerEvent Respond" + serverEvent.getServerResponse(), Toast.LENGTH_SHORT).show();
             List<User> user = serverEvent.getServerResponse().getUserList();
             User users = user.get(0);
-              userId = users.getId();
-              userType=users.getuser_type();
+            userId = users.getId();
+            userlogin_name = users.getuser_name();
+            rdoType = users.getuser_type();
 
+            if (rdoType == 1) {
+                Intent intent = new Intent(this, Employer.class);
+                intent.putExtra("employerid", userId);
+                intent.putExtra("employername", userlogin_name);
+                startActivity(intent);
+
+
+            } else if (rdoType == 2) {
+
+                Intent intent = new Intent(this, Main3Activity.class);
+                intent.putExtra("employerid", userId);
+                intent.putExtra("employername", userlogin_name);
+                startActivity(intent);
 
             }
 
-          //  Toast.makeText(getApplicationContext(), userId, Toast.LENGTH_LONG).show();
-            //  extraInformation.setText("" + serverEvent.getServerResponse().getToken()+serverEvent.getServerResponse());
-            //     token = serverEvent.getServerResponse().getToken();
 
-            //    result=serverEvent.getServerResponse().getLogin_name();
-            //   id=serverEvent.getServerResponse().getId();
-            // email=serverEvent.getServerResponse().getemail();
-            //rdoType=serverEvent.getServerResponse().getrdoType();
-            //Id=serverEvent.getServerResponse().getId();
-            //  if (rdoType == 1)
-            //{
-            //   Intent intent = new Intent(this, Employer.class);
-            // intent.putExtra("token", token);
-            //intent.putExtra("email",email);
-            //intent.putExtra("id",id);
-            // startActivity(intent);
-
-            //}
-            // else if (rdoType == 2)
-            //{
-            //  Intent intent = new Intent(this, Employer_profile.class);
-            //intent.putExtra("token", token);
-            //startActivity(intent);
-            //}
-            // else
-            // {
-            //   return;
-
-            //}
-
-            // Intent intent = new Intent(MainLoginActivity.this, JFirstMenuPage.class);
-            //    startActivity(intent)
         }
-  //      if (serverEvent.getServerResponse() == null) {
+
+        //  Toast.makeText(getApplicationContext(), userId, Toast.LENGTH_LONG).show();
+        //  extraInformation.setText("" + serverEvent.getServerResponse().getToken()+serverEvent.getServerResponse());
+        //     token = serverEvent.getServerResponse().getToken();
+
+        //    result=serverEvent.getServerResponse().getLogin_name();
+        //    id=serverEvent.getServerResponse().getId();
+        //    email=serverEvent.getServerResponse().getemail();
+        //    rdoType=serverEvent.getServerResponse().getrdoType();
+        //    Id=serverEvent.getServerResponse().getId();
+        //    if (rdoType == 1)
+        //    {
+        //    Intent intent = new Intent(this, Employer.class);
+        //    intent.putExtra("token", token);
+        //    intent.putExtra("email",email);
+        //    intent.putExtra("id",id);
+        //    startActivity(intent);
+
+        //}
+        // else if (rdoType == 2)
+        //{
+        //  Intent intent = new Intent(this, Employer_profile.class);
+        //intent.putExtra("token", token);
+        //startActivity(intent);
+        //}
+        // else
+        // {
+        //   return;
+
+        //}
+
+        // Intent intent = new Intent(MainLoginActivity.this, JFirstMenuPage.class);
+        //    startActivity(intent)
+    }
+    //      if (serverEvent.getServerResponse() == null) {
     //        Toast.makeText(getApplicationContext(), "Login failed please try again", Toast.LENGTH_LONG).show();
 
 
-
-        // if (serverEvent.getServerResponse().getToken() != null) {
-        // information.setText("Username: " + serverEvent.getServerResponse().getToken() + " || Password: " + serverEvent.getServerResponse().getPassword());
-        //     }
+    // if (serverEvent.getServerResponse().getToken() != null) {
+    // information.setText("Username: " + serverEvent.getServerResponse().getToken() + " || Password: " + serverEvent.getServerResponse().getPassword());
+    //     }
 
 //    }
 
 
     @Subscribe
-    public void onErrorEvent (ErrorEvent errorEvent){
+    public void onErrorEvent(ErrorEvent errorEvent) {
         Toast.makeText(this, "onErrorEvent fail " + errorEvent.getErrroMsg(), Toast.LENGTH_SHORT).show();
     }
+
     @Override
     public void onResume() {
         super.onResume();

@@ -17,10 +17,10 @@ public class User implements Serializable {
     private String login_name;
 
     @SerializedName("user_type")
-    private String user_type;
+    private int user_type;
 
 
-    public User(String id, String login_name,String user_type) {
+    public User(String id, String login_name,int user_type) {
         this.id = id;
         this.login_name = login_name;
         this.user_type=user_type;
@@ -28,7 +28,10 @@ public class User implements Serializable {
     public String getId(){
         return id;
     }
-    public String getuser_type(){
+    public int getuser_type(){
         return user_type;
+    }
+    public String getuser_name(){
+        return login_name;
     }
 }
